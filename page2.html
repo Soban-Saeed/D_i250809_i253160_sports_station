@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full viewport height */
+}
+
+.login-container {
+    width: 320px;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.separator-line {
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+    margin: 10px 0 20px 0;
+}
+
+.login-container h1 {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d0d0d0;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.input-group img {
+    width: 18px;
+    opacity: 0.7;
+    margin-right: 6px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 100%;
+}
+
+.forgot-password {
+    font-size: 12px;
+    margin: 5px 0 15px 3px;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-button {
+    width: 100%;
+    background: #d9d9d9;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.or-separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.or-separator div {
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.or-separator span {
+    margin: 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.social-login img {
+    width: 16px;
+    vertical-align: middle;
+}
+
+.signup-text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.signup-text span {
+    font-weight: 700;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="login-container">
+
+    <h2>Log In</h2>
+    <div class="separator-line"></div>
+
+    <h1>welcome</h1>
+
+    <!-- Email -->
+    <div class="input-group">
+        <div>
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png" alt="email icon">
+            <input type="email" placeholder="Enter email">
+        </div>
+    </div>
+
+    <!-- Password -->
+    <div class="input-group">
+        <div>
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/lock.png" alt="lock icon">
+            <input type="password" placeholder="Enter Password">
+        </div>
+    </div>
+
+    <p class="forgot-password">forgot password</p>
+
+    <button class="login-button" onclick="alert('Your account is created');">LOG IN</button>
+
+    <!-- OR separator -->
+    <div class="or-separator">
+        <div></div>
+        <span>OR</span>
+        <div></div>
+    </div>
+
+    <!-- Google + Apple -->
+    <div class="social-login">
+        <div>
+            continue with google 
+            <img src="https://img.icons8.com/color/48/google-logo.png" alt="google logo">
+        </div>
+        <div>
+            continue with apple 
+            <img src="https://img.icons8.com/ios-filled/50/000000/mac-os.png" alt="apple logo">
+        </div>
+    </div>
+
+    <p class="signup-text">
+        Don’t have an account? 
+        <span>sign up</span>
+    </p>
+
+</div>
+
+</body>
+</html>
